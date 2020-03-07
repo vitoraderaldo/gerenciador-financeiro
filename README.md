@@ -2,7 +2,7 @@
 
 Este projeto tem como objetivo o desenvolvimento de uma API Rest em NodeJS aplicando TDD.
 
-**Rodando os testes: **
+** Rodando os testes: **
 `$ npm run test`
 
 ### Tecnologias Utilizadas:
