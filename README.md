@@ -4,6 +4,8 @@ Este projeto tem como objetivo o desenvolvimento de uma API Rest em NodeJS aplic
 
 ** Rodando os testes: **
 `$ npm run test`
+** Rodar testes toda vez que o código mudar de forma automática: **
+`$ npm run secure-mode`
 
 ### Tecnologias Utilizadas:
 
