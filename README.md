@@ -4,10 +4,13 @@ Este projeto tem como objetivo o desenvolvimento de uma API Rest em NodeJS aplic
 
 **Iniciar a API:**
 `$ npm start`
+
 **Rodar os testes uma única vez:**
 `$ npm run test`
+
 **Rodar testes toda vez que o código sofrer alteração:**
 `$ npm run secure-mode`
+
 **Rodar migrações (ambiente teste):**
 `.\node_modules\.bin\knex migrate:latest --env test`
 
