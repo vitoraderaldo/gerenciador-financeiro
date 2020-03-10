@@ -1,17 +1,17 @@
 const supertest = require("supertest");
-const app = require("../src/app");
+const app = require("../../src/app");
 
 test("Listar todos os usuários", () => {
    const request = supertest(app);
    return request.get("/users").then((res) => {
-      expect(res.status).toBe(200);
-      expect(res.body).toHaveLength(1);
-      expect(res.body[0]).toHaveProperty("name", "Vitor");
+      expect(res.status).toBe(201);
+      expect(res.body.length).toBeGreaterThan(0);
    });
 });
 
 test("Inserir Usuário", () => {
-   const user = { name: "Alex", email: "alex@mail.com" };
+   const mail = `${Date.now()}@mail.com.br`;
+   const user = { name: "Alex", mail: mail, passwd: "senha" };
    const request = supertest(app);
    return request
       .post("/users")
