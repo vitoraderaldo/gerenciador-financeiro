@@ -4,7 +4,7 @@ const app = require("../../src/app");
 test("Listar todos os usuários", () => {
    const request = supertest(app);
    return request.get("/users").then((res) => {
-      expect(res.status).toBe(201);
+      expect(res.status).toBe(200);
       expect(res.body.length).toBeGreaterThan(0);
    });
 });

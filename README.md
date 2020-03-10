@@ -17,7 +17,7 @@ Este projeto tem como objetivo o desenvolvimento de uma API Rest em NodeJS aplic
 ### Tecnologias Utilizadas:
 
 1. Node.js
-2. Postgres e Knex
+2. Postgres, Knex e KnexLogger
 3. Passport e JWT
 4. Jest e Supertest
 
