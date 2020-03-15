@@ -44,3 +44,11 @@ test("Não deve inserir usuário sem email", async () => {
    expect(res.status).toBe(400);
    expect(res.body.error).toBe("Email é um atributo obrigatório");
 });
+
+test("Não deve inserir usuário sem senha", async () => {
+   const user = { name: "Dont Care", mail: "john" };
+   const request = supertest(app);
+   const res = await request.post("/users").send(user);
+   expect(res.status).toBe(400);
+   expect(res.body.error).toBe("Senha é um atributo obrigatório");
+});
